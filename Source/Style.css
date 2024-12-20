@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Audiowide", serif;
+  
   scroll-behavior: smooth;
 }
 
@@ -243,7 +243,7 @@ header {
   width: 100%;
   text-align: center;
   justify-content: center;
-  border-radius: 20px;
+  
 }
 .about_us .row {
   width: 100%;
@@ -287,6 +287,141 @@ header {
   border-radius: 20px;
 }
 
+footer {
+  background-image: url(https://img.freepik.com/premium-photo/html-system-website-concept_23-2150376770.jpg?w=740);
+  
+  background-size: cover;
+  background-position: center;
+  font-family: "Caveat", serif;
+  width: 100%;
+  background-color: rgba(0, 238, 255, 0.3);
+}
+footer .row {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  padding: 40px 0;
+  justify-content: center;
+  color: white;
+}
+footer .row .col1 {
+  flex-basis: 24%;
+  padding: 0 15px;
+}
+footer .row .col1 h2 {
+  font-weight: bold;
+  padding: 15px 0;
+  font-size: 30px;
+}
+footer .row .col1 p {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 20px;
+}
+footer .row .col2 {
+  flex-basis: 22%;
+  padding: 0 25px;
+}
+footer .row .col2 h2 {
+  padding: 15px 0;
+  font-size: 30px;
+}
+footer .row .col2 .row1 {
+  padding: 10px 0;
+  display: flex;
+}
+footer .row .col2 .row1 .column1 {
+  padding: 10px 15px 10px 0;
+  font-size: 20px;
+}
+footer .row .col2 .row2 {
+  padding: 10px 0;
+  display: flex;
+}
+footer .row .col2 .row2 .column1 {
+  padding: 10px 15px 10px 0;
+  font-size: 20px;
+}
+footer .row .col2 .row3 {
+  padding: 10px 0;
+  display: flex;
+}
+footer .row .col2 .row3 .column1 {
+  padding: 10px 15px 10px 0;
+  font-size: 20px;
+}
+footer .row .col2 p {
+  color: rgb(210, 210, 210);
+}
+footer .row .col3 {
+  flex-basis: 18%;
+  padding: 0 15px;
+}
+footer .row .col3 h2 {
+  padding: 15px 0;
+}
+footer .row .col3 ul li {
+  list-style-type: none;
+  padding: 6px 0px;
+}
+footer .row .col3 ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  padding: 0px 12px;
+  transition: 0.3s ease-in-out;
+}
+footer .row .col3 ul li a:hover {
+  color: black;
+}
+footer .row .col4 {
+  flex-basis: 16%;
+  padding: 23px 15px;
+  justify-content: center;
+}
+footer .row .col4 li {
+  list-style-type: none;
+  padding: 15px;
+}
+footer .row .col4 li button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+footer .row .col4 li button i {
+  font-size: 22px;
+  color: white;
+}
+#btn1 {
+  background-color: rgb(0, 54, 180);
+}
+#btn2 {
+  background-color: rgb(0, 184, 205);
+}
+#btn3 {
+  background-color: rgb(0, 0, 0);
+}
+@media (max-width: 700px) {
+  footer .row {
+    flex-direction: column;
+  }
+  footer .row .col1 {
+    padding: 20px 10px;
+  }
+  footer .row .col2 {
+    padding: 20px 10px;
+  }
+  footer .row .col3 {
+    padding: 20px 10px;
+  }
+  footer .row .col4 {
+    padding: 20px 10px;
+    text-align: center;
+  }
+  footer .row .col4 {
+    display: flex;
+  }
+}
+
 /* Responsive Design*/
 @media (max-width: 992px) {
   .navbar .links,
@@ -307,8 +442,12 @@ header {
   .services .row {
     display: block;
   }
-  .about_us .row{
+  .about_us .row {
     display: block;
+  }
+  .footer-col .row .col4 li{
+    display: contents;
+    display: flex;
   }
 }
 
@@ -322,5 +461,6 @@ header {
   }
   .hero_section .row .col_1 h1 {
     font-size: 30px;
+    display: flex;
   }
 }
